@@ -1,5 +1,6 @@
 import sqlite3
 
+
 def initialize():
     conn = sqlite3.connect("game.db")
     cursor = conn.cursor()
@@ -17,13 +18,5 @@ def initialize():
     )
     """)
 
-    conn.commit()
-    conn.close()
-    conn = sqlite3.connect("game.db")
-    cursor = conn.cursor()
-    conn.commit()
-    conn.close()
-    conn = sqlite3.connect("game.db")
-    cursor = conn.cursor()
     conn.commit()
     conn.close()
